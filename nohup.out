@@ -1,0 +1,30 @@
+[train]:   0%|          | 0/57 [00:00<?, ?it/s]{'lr': 1e-05, 'pct_start': 0.0, 'epochs': 1000, 'steps_per_epoch': 57, 'T_0': 500, 'T_multi': 1, 'milestones': [250, 500, 750], 'gamma': 0.1}
+{'lr': 1e-05, 'pct_start': 0.0, 'epochs': 1000, 'steps_per_epoch': 57, 'T_0': 500, 'T_multi': 1, 'milestones': [250, 500, 750], 'gamma': 0.1}
+{'lr': 0.0002, 'pct_start': 0.0, 'epochs': 1000, 'steps_per_epoch': 57, 'T_0': 500, 'T_multi': 1, 'milestones': [250, 500, 750], 'gamma': 0.1}
+{'lr': 1e-05, 'pct_start': 0.0, 'epochs': 1000, 'steps_per_epoch': 57, 'T_0': 500, 'T_multi': 1, 'milestones': [250, 500, 750], 'gamma': 0.1}
+{'lr': 1e-05, 'pct_start': 0.0, 'epochs': 1000, 'steps_per_epoch': 57, 'T_0': 500, 'T_multi': 1, 'milestones': [250, 500, 750], 'gamma': 0.1}
+{'lr': 1e-05, 'pct_start': 0.0, 'epochs': 1000, 'steps_per_epoch': 57, 'T_0': 500, 'T_multi': 1, 'milestones': [250, 500, 750], 'gamma': 0.1}
+{'lr': 1e-05, 'pct_start': 0.0, 'epochs': 1000, 'steps_per_epoch': 57, 'T_0': 500, 'T_multi': 1, 'milestones': [250, 500, 750], 'gamma': 0.1}
+{'lr': 1e-05, 'pct_start': 0.0, 'epochs': 1000, 'steps_per_epoch': 57, 'T_0': 500, 'T_multi': 1, 'milestones': [250, 500, 750], 'gamma': 0.1}
+{'lr': 1e-05, 'pct_start': 0.0, 'epochs': 1000, 'steps_per_epoch': 57, 'T_0': 500, 'T_multi': 1, 'milestones': [250, 500, 750], 'gamma': 0.1}
+Traceback (most recent call last):
+  File "train_trans_pca.py", line 174, in <module>
+    main()
+  File "/home/gy/anaconda3/envs/autopst/lib/python3.6/site-packages/click/core.py", line 1137, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/gy/anaconda3/envs/autopst/lib/python3.6/site-packages/click/core.py", line 1062, in main
+    rv = self.invoke(ctx)
+  File "/home/gy/anaconda3/envs/autopst/lib/python3.6/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/gy/anaconda3/envs/autopst/lib/python3.6/site-packages/click/core.py", line 763, in invoke
+    return __callback(*args, **kwargs)
+  File "train_trans_pca.py", line 142, in main
+    train_results = trainer._train_lmk_pca_epoch()
+  File "/home/gy/code/A2L_StarG2/trainer.py", line 489, in _train_lmk_pca_epoch
+    self.model, self.model_mot, inits, mots, length_mots, input_lmks, x_real, y_org, y_trg, x_refs=[x_ref, x_ref2], use_adv=use_adv)
+  File "/home/gy/code/A2L_StarG2/losses.py", line 380, in compute_pcalmk_g_loss
+    out = net_mot.discriminator_mot(example_landmark, motion_fake, length_mots)
+  File "/home/gy/anaconda3/envs/autopst/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+TypeError: forward() missing 1 required positional argument: 'length'
+[train]:   0%|          | 0/57 [00:31<?, ?it/s]

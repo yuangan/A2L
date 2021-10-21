@@ -1,0 +1,75 @@
+log_dir: "Models/A2L_mot_M30_tran"
+save_freq: 200
+device: "cuda"
+epochs: 1001
+batch_size: 64
+pretrained_model: "/home/gy/code/A2L_StarG2/Models/A2L_M30_gn/epoch_00140.pth"
+#"/home/gy/gy/benchmark/A2L_StarG2/Models/A2L_mot_M30_lstm2/epoch_01996.pth"
+#"/home/gy/gy/benchmark/A2L_StarG/Models/A2L/epoch_00750.pth"
+
+# "/home/gy/gy/benchmark/A2L_StarG2/Models/A2L_mot_M30/epoch_01750.pth"
+load_only_params: true
+# fp16_run: true
+fp16_run: false
+
+# train_data: "Data/train_emo_list_01.txt"
+# val_data: "Data/val_emo_list_0.txt"
+# val_data: "Data/train_emo_list_01.txt"
+
+train_data: "Data/train_emo_list_new.txt"
+val_data: "Data/val_emo_list_new.txt"
+
+F0_path: "Utils/JDC/bst.t7"
+ASR_config: "Utils/ASR/config.yml"
+ASR_path: "Utils/ASR/epoch_00100.pth"
+
+preprocess_params:
+  sr: 24000
+  spect_params:
+    n_fft: 2048
+    win_length: 1200
+    hop_length: 800
+
+model_params:
+  dim_in: 64
+  style_dim: 64
+  latent_dim: 16
+  num_domains: 8
+  max_conv_dim: 512
+  n_repeat: 4
+  w_hpf: 0
+  F0_channel: 256
+
+loss_params:
+  g_loss:
+    lambda_sty: 1.
+    lambda_cyc: 5.
+    lambda_ds: 1.
+    lambda_norm: 1.
+    lambda_asr: 10.
+    lambda_f0: 5.
+    lambda_f0_sty: 0.1
+    lambda_adv: 2.
+    lambda_adv_cls: 0.5
+    norm_bias: 0.5
+  d_loss:
+    lambda_reg: 1.
+    lambda_adv_cls: 0.1
+    lambda_con_reg: 10.
+  
+  use_adv_cls_epoch: 601
+  use_adv_epoch: 401
+
+  prefix:
+    name: 'tran'
+    ep: 20
+            
+optimizer_params:
+    lr: 0.00001
+    wd: 0.0
+#   T_0: 1000
+#   T_mult: 1
+    milestones: [600, 800, 1000]
+    gamma: 0.1
+
+    dis_lr: 0.0005

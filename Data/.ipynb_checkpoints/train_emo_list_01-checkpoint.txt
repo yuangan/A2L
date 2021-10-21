@@ -1,0 +1,16 @@
+/data3/MEAD/M003/wav/surprised/level_3/015.wav|7
+/data3/MEAD/M003/wav/surprised/level_3/007.wav|7
+/data3/MEAD/M003/wav/surprised/level_3/004.wav|7
+/data3/MEAD/M003/wav/surprised/level_3/006.wav|7
+/data3/MEAD/M003/wav/surprised/level_3/010.wav|7
+/data3/MEAD/M003/wav/surprised/level_3/003.wav|7
+/data3/MEAD/M003/wav/surprised/level_3/013.wav|7
+/data3/MEAD/M003/wav/sad/level_3/015.wav|6
+/data3/MEAD/M003/wav/sad/level_3/007.wav|6
+/data3/MEAD/M003/wav/sad/level_3/004.wav|6
+/data3/MEAD/M003/wav/sad/level_3/006.wav|6
+/data3/MEAD/M003/wav/sad/level_3/010.wav|6
+/data3/MEAD/M003/wav/sad/level_3/003.wav|6
+/data3/MEAD/M003/wav/sad/level_3/013.wav|6
+/data3/MEAD/M003/wav/sad/level_3/018.wav|6
+/data3/MEAD/M003/wav/sad/level_3/001.wav|6

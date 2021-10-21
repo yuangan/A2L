@@ -1,0 +1,5 @@
+/data3/MEAD/M039/wav/surprised/level_3/030.wav|7
+/data3/MEAD/M039/wav/surprised/level_3/029.wav|7
+/data3/MEAD/M039/wav/surprised/level_3/022.wav|7
+/data3/MEAD/M039/wav/surprised/level_3/024.wav|7
+/data3/MEAD/M039/wav/surprised/level_3/023.wav|7

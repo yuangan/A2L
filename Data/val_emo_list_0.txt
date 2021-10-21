@@ -1,0 +1,16 @@
+/data3/MEAD/M003/wav/surprised/level_3/023.wav|7
+/data3/MEAD/M003/wav/surprised/level_3/028.wav|7
+/data3/MEAD/M003/wav/surprised/level_3/012.wav|7
+/data3/MEAD/M003/wav/angry/level_3/023.wav|0
+/data3/MEAD/M003/wav/angry/level_3/028.wav|0
+/data3/MEAD/M003/wav/angry/level_3/020.wav|0
+/data3/MEAD/M003/wav/angry/level_3/024.wav|0
+/data3/MEAD/M003/wav/fear/level_3/025.wav|3
+/data3/MEAD/M003/wav/fear/level_3/017.wav|3
+/data3/MEAD/M003/wav/disgusted/level_3/023.wav|2
+/data3/MEAD/M003/wav/happy/level_3/023.wav|4
+/data3/MEAD/M003/wav/happy/level_3/029.wav|4
+/data3/MEAD/M003/wav/contempt/level_3/025.wav|1
+/data3/MEAD/M003/wav/contempt/level_3/029.wav|1
+/data3/MEAD/M003/wav/sad/level_3/023.wav|6
+/data3/MEAD/M003/wav/sad/level_3/028.wav|6
